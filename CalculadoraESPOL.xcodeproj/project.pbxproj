@@ -6,17 +6,44 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB15BF402DFDC7890061CCD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15BF3C2DFDC7890061CCD9 /* Assets.xcassets */; };
+		FB15BF412DFDC7890061CCD9 /* CalculadoraESPOLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF3D2DFDC7890061CCD9 /* CalculadoraESPOLApp.swift */; };
+		FB15BF422DFDC7890061CCD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF3E2DFDC7890061CCD9 /* ContentView.swift */; };
+		FB15BF452DFDC7A30061CCD9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF442DFDC7A30061CCD9 /* FormTextField.swift */; };
+		FB15BF472DFDD5610061CCD9 /* CalculadoraVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF462DFDD5610061CCD9 /* CalculadoraVM.swift */; };
+		FB15BF492DFDD92B0061CCD9 /* SubjectsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF482DFDD92B0061CCD9 /* SubjectsPicker.swift */; };
+		FB15BF512DFDDC790061CCD9 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF502DFDDC790061CCD9 /* Subject.swift */; };
+		FB15BF552DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF542DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift */; };
+		FB15BF632DFDE1910061CCD9 /* subjects.json in Resources */ = {isa = PBXBuildFile; fileRef = FB15BF622DFDE1910061CCD9 /* subjects.json */; };
+		FB15BF692DFDE2550061CCD9 /* SubjectDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF682DFDE2550061CCD9 /* SubjectDTO.swift */; };
+		FB15BF6B2DFDE47D0061CCD9 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF6A2DFDE47D0061CCD9 /* SampleData.swift */; };
+		FB15BF6D2DFE64050061CCD9 /* CalculadoraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF6C2DFE64050061CCD9 /* CalculadoraView.swift */; };
+		FB15BF6F2DFE6C100061CCD9 /* ResultMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF6E2DFE6C100061CCD9 /* ResultMessage.swift */; };
+		FB15BF712DFE72F80061CCD9 /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF702DFE72F80061CCD9 /* BackgroundOverlay.swift */; };
+		FB15BF752DFE871D0061CCD9 /* FocusedFieldEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF742DFE871D0061CCD9 /* FocusedFieldEnum.swift */; };
+		FBC93D902E06FF210048C6E0 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC93D8F2E06FF210048C6E0 /* NavigationBarModifier.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FB15BF2E2DFDC4F70061CCD9 /* CalculadoraESPOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculadoraESPOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB15BF3C2DFDC7890061CCD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB15BF3D2DFDC7890061CCD9 /* CalculadoraESPOLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraESPOLApp.swift; sourceTree = "<group>"; };
+		FB15BF3E2DFDC7890061CCD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB15BF442DFDC7A30061CCD9 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		FB15BF462DFDD5610061CCD9 /* CalculadoraVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraVM.swift; sourceTree = "<group>"; };
+		FB15BF482DFDD92B0061CCD9 /* SubjectsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsPicker.swift; sourceTree = "<group>"; };
+		FB15BF502DFDDC790061CCD9 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		FB15BF542DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraEspolPreviewContainer.swift; sourceTree = "<group>"; };
+		FB15BF622DFDE1910061CCD9 /* subjects.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = subjects.json; sourceTree = "<group>"; };
+		FB15BF682DFDE2550061CCD9 /* SubjectDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDTO.swift; sourceTree = "<group>"; };
+		FB15BF6A2DFDE47D0061CCD9 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		FB15BF6C2DFE64050061CCD9 /* CalculadoraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraView.swift; sourceTree = "<group>"; };
+		FB15BF6E2DFE6C100061CCD9 /* ResultMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMessage.swift; sourceTree = "<group>"; };
+		FB15BF702DFE72F80061CCD9 /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
+		FB15BF742DFE871D0061CCD9 /* FocusedFieldEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedFieldEnum.swift; sourceTree = "<group>"; };
+		FBC93D8F2E06FF210048C6E0 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FB15BF302DFDC4F70061CCD9 /* CalculadoraESPOL */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CalculadoraESPOL;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB15BF2B2DFDC4F70061CCD9 /* Frameworks */ = {
@@ -32,7 +59,7 @@
 		FB15BF252DFDC4F60061CCD9 = {
 			isa = PBXGroup;
 			children = (
-				FB15BF302DFDC4F70061CCD9 /* CalculadoraESPOL */,
+				FB15BF3F2DFDC7890061CCD9 /* CalculadoraESPOL */,
 				FB15BF2F2DFDC4F70061CCD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +70,69 @@
 				FB15BF2E2DFDC4F70061CCD9 /* CalculadoraESPOL.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FB15BF3F2DFDC7890061CCD9 /* CalculadoraESPOL */ = {
+			isa = PBXGroup;
+			children = (
+				FB15BF5D2DFDE04B0061CCD9 /* Resources */,
+				FB15BF432DFDC79E0061CCD9 /* Components */,
+				FB15BF4D2DFDDC440061CCD9 /* SwiftData */,
+				FB15BF642DFDE22F0061CCD9 /* Model */,
+				FB15BF4A2DFDDA7A0061CCD9 /* ViewModels */,
+				FB15BF3E2DFDC7890061CCD9 /* ContentView.swift */,
+				FB15BF3D2DFDC7890061CCD9 /* CalculadoraESPOLApp.swift */,
+				FB15BF3C2DFDC7890061CCD9 /* Assets.xcassets */,
+				FB15BF6C2DFE64050061CCD9 /* CalculadoraView.swift */,
+			);
+			path = CalculadoraESPOL;
+			sourceTree = "<group>";
+		};
+		FB15BF432DFDC79E0061CCD9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBC93D8F2E06FF210048C6E0 /* NavigationBarModifier.swift */,
+				FB15BF442DFDC7A30061CCD9 /* FormTextField.swift */,
+				FB15BF482DFDD92B0061CCD9 /* SubjectsPicker.swift */,
+				FB15BF6E2DFE6C100061CCD9 /* ResultMessage.swift */,
+				FB15BF702DFE72F80061CCD9 /* BackgroundOverlay.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FB15BF4A2DFDDA7A0061CCD9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB15BF462DFDD5610061CCD9 /* CalculadoraVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FB15BF4D2DFDDC440061CCD9 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				FB15BF502DFDDC790061CCD9 /* Subject.swift */,
+				FB15BF542DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift */,
+				FB15BF6A2DFDE47D0061CCD9 /* SampleData.swift */,
+			);
+			path = SwiftData;
+			sourceTree = "<group>";
+		};
+		FB15BF5D2DFDE04B0061CCD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB15BF622DFDE1910061CCD9 /* subjects.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB15BF642DFDE22F0061CCD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB15BF742DFE871D0061CCD9 /* FocusedFieldEnum.swift */,
+				FB15BF682DFDE2550061CCD9 /* SubjectDTO.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +149,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FB15BF302DFDC4F70061CCD9 /* CalculadoraESPOL */,
 			);
 			name = CalculadoraESPOL;
 			packageProductDependencies = (
@@ -109,6 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB15BF632DFDE1910061CCD9 /* subjects.json in Resources */,
+				FB15BF402DFDC7890061CCD9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +208,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB15BF6D2DFE64050061CCD9 /* CalculadoraView.swift in Sources */,
+				FB15BF472DFDD5610061CCD9 /* CalculadoraVM.swift in Sources */,
+				FB15BF552DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift in Sources */,
+				FB15BF412DFDC7890061CCD9 /* CalculadoraESPOLApp.swift in Sources */,
+				FB15BF712DFE72F80061CCD9 /* BackgroundOverlay.swift in Sources */,
+				FB15BF6B2DFDE47D0061CCD9 /* SampleData.swift in Sources */,
+				FB15BF512DFDDC790061CCD9 /* Subject.swift in Sources */,
+				FB15BF452DFDC7A30061CCD9 /* FormTextField.swift in Sources */,
+				FBC93D902E06FF210048C6E0 /* NavigationBarModifier.swift in Sources */,
+				FB15BF6F2DFE6C100061CCD9 /* ResultMessage.swift in Sources */,
+				FB15BF752DFE871D0061CCD9 /* FocusedFieldEnum.swift in Sources */,
+				FB15BF492DFDD92B0061CCD9 /* SubjectsPicker.swift in Sources */,
+				FB15BF692DFDE2550061CCD9 /* SubjectDTO.swift in Sources */,
+				FB15BF422DFDC7890061CCD9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.CalculadoraESPOL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,7 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.CalculadoraESPOL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

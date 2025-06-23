@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CalculadoraESPOLApp: App {
+    @State private var vm: CalculadoraVM = CalculadoraVM()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(vm)
+                .modelContainer(for: Subject.self)
         }
     }
 }
