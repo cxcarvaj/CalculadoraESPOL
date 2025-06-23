@@ -13,7 +13,7 @@
 		FB15BF452DFDC7A30061CCD9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF442DFDC7A30061CCD9 /* FormTextField.swift */; };
 		FB15BF472DFDD5610061CCD9 /* CalculadoraVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF462DFDD5610061CCD9 /* CalculadoraVM.swift */; };
 		FB15BF492DFDD92B0061CCD9 /* SubjectsPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF482DFDD92B0061CCD9 /* SubjectsPicker.swift */; };
-		FB15BF512DFDDC790061CCD9 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF502DFDDC790061CCD9 /* Subject.swift */; };
+		FB15BF512DFDDC790061CCD9 /* SubjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF502DFDDC790061CCD9 /* SubjectData.swift */; };
 		FB15BF552DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF542DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift */; };
 		FB15BF632DFDE1910061CCD9 /* subjects.json in Resources */ = {isa = PBXBuildFile; fileRef = FB15BF622DFDE1910061CCD9 /* subjects.json */; };
 		FB15BF692DFDE2550061CCD9 /* SubjectDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF682DFDE2550061CCD9 /* SubjectDTO.swift */; };
@@ -33,7 +33,7 @@
 		FB15BF442DFDC7A30061CCD9 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		FB15BF462DFDD5610061CCD9 /* CalculadoraVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraVM.swift; sourceTree = "<group>"; };
 		FB15BF482DFDD92B0061CCD9 /* SubjectsPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsPicker.swift; sourceTree = "<group>"; };
-		FB15BF502DFDDC790061CCD9 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		FB15BF502DFDDC790061CCD9 /* SubjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectData.swift; sourceTree = "<group>"; };
 		FB15BF542DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraEspolPreviewContainer.swift; sourceTree = "<group>"; };
 		FB15BF622DFDE1910061CCD9 /* subjects.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = subjects.json; sourceTree = "<group>"; };
 		FB15BF682DFDE2550061CCD9 /* SubjectDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDTO.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		FB15BF4D2DFDDC440061CCD9 /* SwiftData */ = {
 			isa = PBXGroup;
 			children = (
-				FB15BF502DFDDC790061CCD9 /* Subject.swift */,
+				FB15BF502DFDDC790061CCD9 /* SubjectData.swift */,
 				FB15BF542DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift */,
 				FB15BF6A2DFDE47D0061CCD9 /* SampleData.swift */,
 			);
@@ -214,7 +214,7 @@
 				FB15BF412DFDC7890061CCD9 /* CalculadoraESPOLApp.swift in Sources */,
 				FB15BF712DFE72F80061CCD9 /* BackgroundOverlay.swift in Sources */,
 				FB15BF6B2DFDE47D0061CCD9 /* SampleData.swift in Sources */,
-				FB15BF512DFDDC790061CCD9 /* Subject.swift in Sources */,
+				FB15BF512DFDDC790061CCD9 /* SubjectData.swift in Sources */,
 				FB15BF452DFDC7A30061CCD9 /* FormTextField.swift in Sources */,
 				FBC93D902E06FF210048C6E0 /* NavigationBarModifier.swift in Sources */,
 				FB15BF6F2DFE6C100061CCD9 /* ResultMessage.swift in Sources */,

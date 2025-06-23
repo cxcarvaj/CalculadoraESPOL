@@ -14,7 +14,7 @@ struct CalculadoraESPOLApp: App {
         WindowGroup {
             ContentView()
                 .environment(vm)
-                .modelContainer(for: Subject.self)
+                .modelContainer(for: SubjectDataSchemeV1.SubjectData.self)
         }
     }
 }

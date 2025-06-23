@@ -13,7 +13,7 @@ final class CalculadoraVM {
     
     var selectedSubjectName: String?
     var subjectName: String = ""
-    var selectedSubject: Subject?
+    var selectedSubject: SubjectDataSchemeV1.SubjectData?
         
     var theoricalPercentage: String = ""
     var firstPartialGrade: String = ""
@@ -28,7 +28,7 @@ final class CalculadoraVM {
         !practicalGrade.isEmpty
     }
     
-    func loadSubjectData(_ subject: Subject) {
+    func loadSubjectData(_ subject: SubjectDataSchemeV1.SubjectData) {
         selectedSubject = subject
         selectedSubjectName = subject.name
         subjectName = subject.name
@@ -73,8 +73,8 @@ final class CalculadoraVM {
             return true
         }
         
-        let fetchDescriptor = FetchDescriptor<Subject>(
-            predicate: #Predicate<Subject> { subject in
+        let fetchDescriptor = FetchDescriptor<SubjectDataSchemeV1.SubjectData>(
+            predicate: #Predicate<SubjectDataSchemeV1.SubjectData> { subject in
                 subject.name == name
             }
         )
@@ -135,8 +135,8 @@ final class CalculadoraVM {
     ) {
         let nameToSearch = subjectName
         
-        let fetchDescriptor = FetchDescriptor<Subject>(
-            predicate: #Predicate<Subject> { subject in
+        let fetchDescriptor = FetchDescriptor<SubjectDataSchemeV1.SubjectData>(
+            predicate: #Predicate<SubjectDataSchemeV1.SubjectData> { subject in
                 subject.name == nameToSearch
             }
         )
@@ -181,7 +181,7 @@ final class CalculadoraVM {
         secondPartialValue: Double,
         improvementValue: Double
     ) {
-        let newSubject = Subject(
+        let newSubject = SubjectDataSchemeV1.SubjectData(
             name: subjectName,
             theoricalPercentage: theoricalValue,
             firstPartialGrade: firstPartialValue,

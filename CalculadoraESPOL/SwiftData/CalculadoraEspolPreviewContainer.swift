@@ -25,14 +25,14 @@ final class CalculadoraEspolPreviewContainer {
         let subjectDTO = try JSONDecoder().decode(SubjectResponseDTO.self, from: data).subjects
         
         subjectDTO.map {
-            Subject(name: $0.name, theoricalPercentage: $0.theoricalPercentage, firstPartialGrade: $0.firstPartialGrade, secondPartialGrade: $0.secondPartialGrade, practicalGrade: $0.practicalGrade, improvementGrade: $0.improvementGrade)
+            SubjectDataSchemeV1.SubjectData(name: $0.name, theoricalPercentage: $0.theoricalPercentage, firstPartialGrade: $0.firstPartialGrade, secondPartialGrade: $0.secondPartialGrade, practicalGrade: $0.practicalGrade, improvementGrade: $0.improvementGrade)
         }.forEach { context.insert($0) }
         
     }
     
     func saveSubjectData(_ subject: SubjectDTO) throws {
         print("Guardando....")
-        let subject = Subject(name: subject.name,
+        let subject = SubjectDataSchemeV1.SubjectData(name: subject.name,
                               theoricalPercentage: subject.theoricalPercentage,
                               firstPartialGrade: subject.firstPartialGrade,
                               secondPartialGrade: subject.secondPartialGrade,

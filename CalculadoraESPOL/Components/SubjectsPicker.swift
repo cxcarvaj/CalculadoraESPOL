@@ -10,7 +10,7 @@ import SwiftData
 
 struct SubjectsPicker: View {
     @Environment(CalculadoraVM.self) var vm
-    @Query private var subjects: [Subject]
+    @Query private var subjects: [SubjectDataSchemeV1.SubjectData]
 
     var body: some View {
         @Bindable var vm = vm

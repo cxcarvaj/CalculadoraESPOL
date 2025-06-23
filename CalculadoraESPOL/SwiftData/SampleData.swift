@@ -11,9 +11,9 @@ import SwiftUI
 
 struct SampleData: PreviewModifier {
     static func makeSharedContext() async throws -> ModelContainer {
-        let configuration = ModelConfiguration(for: Subject.self, isStoredInMemoryOnly: true)
+        let configuration = ModelConfiguration(for: SubjectDataSchemeV1.SubjectData.self, isStoredInMemoryOnly: true)
         
-        let container = try ModelContainer(for: Subject.self, configurations: configuration)
+        let container = try ModelContainer(for: SubjectDataSchemeV1.SubjectData.self, configurations: configuration)
         
         let calculadoraEspolTestContainer = CalculadoraEspolPreviewContainer(context: container.mainContext)
         
