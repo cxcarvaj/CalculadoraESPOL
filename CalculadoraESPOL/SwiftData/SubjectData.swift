@@ -24,14 +24,16 @@ enum SubjectDataSchemeV1: VersionedSchema {
         var secondPartialGrade: Double
         var practicalGrade: Double
         var improvementGrade: Double
+        var totalGrade: Double
         
-        init(name: String, theoricalPercentage: Double, firstPartialGrade: Double, secondPartialGrade: Double, practicalGrade: Double, improvementGrade: Double) {
+        init(name: String, theoricalPercentage: Double, firstPartialGrade: Double, secondPartialGrade: Double, practicalGrade: Double, improvementGrade: Double, totalGrade: Double) {
             self.name = name
             self.theoricalPercentage = theoricalPercentage
             self.firstPartialGrade = firstPartialGrade
             self.secondPartialGrade = secondPartialGrade
             self.practicalGrade = practicalGrade
             self.improvementGrade = improvementGrade
+            self.totalGrade = totalGrade
         }
     }
 }

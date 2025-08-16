@@ -5,7 +5,8 @@
       "firstPartialGrade": 85.5,
       "secondPartialGrade": 78.0,
       "practicalGrade": 92.5,
-      "improvementGrade": 0.0
+      "improvementGrade": 0.0,
+      "totalGrade": 8.9
     },
     {
       "name": "Física Cuántica",
@@ -13,7 +14,8 @@
       "firstPartialGrade": 76.0,
       "secondPartialGrade": 82.5,
       "practicalGrade": 88.0,
-      "improvementGrade": 90.0
+      "improvementGrade": 90.0,
+      "totalGrade": 6.0
     },
     {
       "name": "Programación Swift",
@@ -21,7 +23,8 @@
       "firstPartialGrade": 95.0,
       "secondPartialGrade": 92.0,
       "practicalGrade": 98.5,
-      "improvementGrade": 0.0
+      "improvementGrade": 0.0,
+      "totalGrade": 5
     }
   ]
 }

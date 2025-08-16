@@ -118,15 +118,29 @@ struct CalculadoraView: View {
                 .padding(.horizontal)
                 .toolbar {
                     ToolbarItemGroup(placement: .keyboard) {
-                        Button("Anterior", systemImage: "chevron.up") {
+                        Button {
                             moveToPreviousField()
+                        } label: {
+                            Label("Anterior", systemImage: "chevron.up")
                         }
                         .disabled(focusedField == FocusedField.allCases.first)
+
+//                        Button("Anterior", systemImage: "chevron.up") {
+//                            moveToPreviousField()
+//                        }
+//                        .disabled(focusedField == FocusedField.allCases.first)
                         
-                        Button("Siguiente", systemImage: "chevron.down") {
+                        Button {
                             moveToNextField()
+                        } label: {
+                            Label("Siguiente", systemImage: "chevron.down")
                         }
                         .disabled(focusedField == FocusedField.allCases.last)
+                        
+//                        Button("Siguiente", systemImage: "chevron.down") {
+//                            moveToNextField()
+//                        }
+//                        .disabled(focusedField == FocusedField.allCases.last)
                         
                         Spacer()
                         
@@ -147,7 +161,7 @@ struct CalculadoraView: View {
 //                }
 //                .toolbarBackground(.appNavigationBar, for: .navigationBar)
 //                .toolbarBackground(.visible, for: .automatic)
-                .navigationTitle("Calculadora")
+                .navigationTitle("Calculadora ESPOL")
                 .navigationBarModifier(backgroundColor: .appNavigationBar, foregroundColor: .white, withSeparator: true)
 //                .navigationBarTitleDisplayMode(.inline)
                 .onTapGesture {

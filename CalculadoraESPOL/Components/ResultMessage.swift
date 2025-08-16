@@ -13,7 +13,7 @@ struct ResultMessage: View {
 
     let result: Double
     var hasPassed: Bool {
-        result >= 7
+        result >= 6
     }
     
     var body: some View {
@@ -40,7 +40,7 @@ struct ResultMessage: View {
                 .font(.title2.bold())
                 .multilineTextAlignment(.center)
                 .accessibilityAddTraits(.isHeader)
-            Text(hasPassed ? "Aprobaste" : "Reprobaste")
+            Text(hasPassed ? "Aprobaste con \(String(format: "%.2f", result))" : "Reprobaste con \(String(format: "%.2f", result))")
                 .font(.body)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 8)

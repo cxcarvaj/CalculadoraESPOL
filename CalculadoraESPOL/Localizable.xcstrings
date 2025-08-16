@@ -1,0 +1,328 @@
+{
+  "sourceLanguage" : "es-419",
+  "strings" : {
+    "¿Eliminar materia?" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete subject?"
+          }
+        }
+      }
+    },
+    "¿Estás seguro que deseas eliminar esta materia? Esta acción no se puede deshacer." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to delete this item? This action cannot be undone."
+          }
+        }
+      }
+    },
+    "(opcional)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(optional)"
+          }
+        }
+      }
+    },
+    "Actualizar materia" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update subject"
+          }
+        }
+      }
+    },
+    "Agrega materias para verlas en el historial" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add subjects to view in history"
+          }
+        }
+      }
+    },
+    "Anterior" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        }
+      }
+    },
+    "Aprobaste con %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You passed with %@"
+          }
+        }
+      }
+    },
+    "Buscar por nombre de materia" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search by subject name"
+          }
+        }
+      }
+    },
+    "Calculadora" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculator"
+          }
+        }
+      }
+    },
+    "Calculadora ESPOL" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ESPOL Calculator"
+          }
+        }
+      }
+    },
+    "Calcular" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculate"
+          }
+        }
+      }
+    },
+    "Cancelar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "Cerrar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        }
+      }
+    },
+    "Detalles de la Materia" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subject Details"
+          }
+        }
+      }
+    },
+    "Elige una materia" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a subject"
+          }
+        }
+      }
+    },
+    "Eliminar" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        }
+      }
+    },
+    "Esta página aún no está disponible" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This page is not yet available"
+          }
+        }
+      }
+    },
+    "Felicitaciones! 🥳" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congratulations! 🥳"
+          }
+        }
+      }
+    },
+    "Guardar materia" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save subject"
+          }
+        }
+      }
+    },
+    "Historial" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "History"
+          }
+        }
+      }
+    },
+    "Historial de Materias" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subject History"
+          }
+        }
+      }
+    },
+    "Limpiar búsqueda" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear search"
+          }
+        }
+      }
+    },
+    "Listo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "Lo sentimos mucho ☹️" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We are so sorry ☹️"
+          }
+        }
+      }
+    },
+    "Materias guardadas:" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved subjects:"
+          }
+        }
+      }
+    },
+    "No hay materias guardadas" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There are no saved subjects"
+          }
+        }
+      }
+    },
+    "No hay resultados para '%@'" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No results found for '%@'"
+          }
+        }
+      }
+    },
+    "No tienes registros guardados de materias 💾" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have no saved records of subjects 💾"
+          }
+        }
+      }
+    },
+    "Reprobaste con %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You failed with %@"
+          }
+        }
+      }
+    },
+    "Selecciona una materia" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select a subject"
+          }
+        }
+      }
+    },
+    "Siguiente" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        }
+      }
+    },
+    "Trata de probar nuestra calculadora" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try our calculator"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

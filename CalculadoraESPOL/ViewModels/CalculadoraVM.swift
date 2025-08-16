@@ -22,10 +22,8 @@ final class CalculadoraVM {
     var improvementGrade: String = ""
     var totalScore: Double?
     var areValuesValid: Bool {
-        !theoricalPercentage.isEmpty &&
         !firstPartialGrade.isEmpty &&
-        !secondPartialGrade.isEmpty &&
-        !practicalGrade.isEmpty
+        !secondPartialGrade.isEmpty
     }
     
     func loadSubjectData(_ subject: SubjectDataSchemeV1.SubjectData) {
@@ -41,19 +39,50 @@ final class CalculadoraVM {
     }
 
     func getScore() {
-        guard let theoricalValue = Double(theoricalPercentage),
-              let practicalValue = Double(practicalGrade),
-              let firstPartialValue = Double(firstPartialGrade),
+        guard let firstPartialValue = Double(firstPartialGrade),
               let secondPartialValue = Double(secondPartialGrade)
         else { return }
         
-        let practicalPercentage = (100 - theoricalValue) / 100
-        let practicalGrade = practicalValue * practicalPercentage
-        let theoricalPercentage = theoricalValue / 100
-        let theoricalGrade = ((firstPartialValue + secondPartialValue) / 2) * theoricalPercentage
+        let theoricalValue = Double(theoricalPercentage) ?? 100
+        let practicalValue = Double(practicalGrade) ?? 100
+        let improvementValue = improvementGrade.isEmpty ? nil : Double(improvementGrade)
         
-        totalScore = (practicalGrade + theoricalGrade) / 10
+        totalScore = calculateScore(
+            firstPartial: firstPartialValue,
+            secondPartial: secondPartialValue,
+            theoretical: theoricalValue,
+            practical: practicalValue,
+            improvement: improvementValue
+        )
+    }
+    
+    func calculateScore(
+        firstPartial: Double,
+        secondPartial: Double,
+        theoretical: Double,
+        practical: Double,
+        improvement: Double?
+    ) -> Double {
+        let theoricalPercent = theoretical / 100
+        let practicalPercent = (100 - theoretical) / 100
         
+        let practicalComponent = practical * practicalPercent
+        var theoricalComponent: Double
+        
+        if let improvementValue = improvement {
+            let lowestGrade = min(firstPartial, secondPartial)
+            
+            if improvementValue > lowestGrade {
+                let betterGrade = max(firstPartial, secondPartial)
+                theoricalComponent = ((betterGrade + improvementValue) / 2) * theoricalPercent
+            } else {
+                theoricalComponent = ((firstPartial + secondPartial) / 2) * theoricalPercent
+            }
+        } else {
+            theoricalComponent = ((firstPartial + secondPartial) / 2) * theoricalPercent
+        }
+        
+        return (practicalComponent + theoricalComponent) / 10
     }
     
     func clearFields() {
@@ -104,6 +133,14 @@ final class CalculadoraVM {
             return
         }
         
+        let totalGrade = calculateScore(
+            firstPartial: firstPartialValue,
+            secondPartial: secondPartialValue,
+            theoretical: theoricalValue,
+            practical: practicalValue,
+            improvement: improvementValue
+        )
+        
         if subjectName == selectedSubjectName {
             updateExistingSubject(
                 using: modelContext,
@@ -111,7 +148,8 @@ final class CalculadoraVM {
                 practicalValue: practicalValue,
                 firstPartialValue: firstPartialValue,
                 secondPartialValue: secondPartialValue,
-                improvementValue: improvementValue
+                improvementValue: improvementValue,
+                totalGrade: totalGrade
             )
         } else {
             createNewSubject(
@@ -120,7 +158,8 @@ final class CalculadoraVM {
                 practicalValue: practicalValue,
                 firstPartialValue: firstPartialValue,
                 secondPartialValue: secondPartialValue,
-                improvementValue: improvementValue
+                improvementValue: improvementValue,
+                totalGrade: totalGrade
             )
         }
     }
@@ -131,7 +170,8 @@ final class CalculadoraVM {
         practicalValue: Double,
         firstPartialValue: Double,
         secondPartialValue: Double,
-        improvementValue: Double
+        improvementValue: Double,
+        totalGrade: Double
     ) {
         let nameToSearch = subjectName
         
@@ -164,7 +204,8 @@ final class CalculadoraVM {
                     practicalValue: practicalValue,
                     firstPartialValue: firstPartialValue,
                     secondPartialValue: secondPartialValue,
-                    improvementValue: improvementValue
+                    improvementValue: improvementValue,
+                    totalGrade: totalGrade
                 )
             }
             
@@ -179,7 +220,8 @@ final class CalculadoraVM {
         practicalValue: Double,
         firstPartialValue: Double,
         secondPartialValue: Double,
-        improvementValue: Double
+        improvementValue: Double,
+        totalGrade: Double,
     ) {
         let newSubject = SubjectDataSchemeV1.SubjectData(
             name: subjectName,
@@ -187,7 +229,8 @@ final class CalculadoraVM {
             firstPartialGrade: firstPartialValue,
             secondPartialGrade: secondPartialValue,
             practicalGrade: practicalValue,
-            improvementGrade: improvementValue
+            improvementGrade: improvementValue,
+            totalGrade: totalGrade
         )
         
         modelContext.insert(newSubject)

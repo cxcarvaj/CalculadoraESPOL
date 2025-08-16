@@ -14,6 +14,7 @@ struct SubjectDTO: Codable {
     let secondPartialGrade: Double
     let practicalGrade: Double
     let improvementGrade: Double
+    let totalGrade: Double
 }
 
 struct SubjectResponseDTO: Codable {

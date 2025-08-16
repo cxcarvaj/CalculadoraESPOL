@@ -22,6 +22,11 @@
 		FB15BF6F2DFE6C100061CCD9 /* ResultMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF6E2DFE6C100061CCD9 /* ResultMessage.swift */; };
 		FB15BF712DFE72F80061CCD9 /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF702DFE72F80061CCD9 /* BackgroundOverlay.swift */; };
 		FB15BF752DFE871D0061CCD9 /* FocusedFieldEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15BF742DFE871D0061CCD9 /* FocusedFieldEnum.swift */; };
+		FBAA58282E4BD6310014626E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FBAA58272E4BD6310014626E /* Localizable.xcstrings */; };
+		FBAA586E2E510CE80014626E /* HistorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA586D2E510CE80014626E /* HistorialView.swift */; };
+		FBAA58702E5124140014626E /* SubjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA586F2E5124140014626E /* SubjectDetailView.swift */; };
+		FBAA58722E5125840014626E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA58712E5125840014626E /* Extensions.swift */; };
+		FBAA58742E5126250014626E /* ScoreBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAA58732E5126250014626E /* ScoreBadgeView.swift */; };
 		FBC93D902E06FF210048C6E0 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC93D8F2E06FF210048C6E0 /* NavigationBarModifier.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,11 @@
 		FB15BF6E2DFE6C100061CCD9 /* ResultMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMessage.swift; sourceTree = "<group>"; };
 		FB15BF702DFE72F80061CCD9 /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
 		FB15BF742DFE871D0061CCD9 /* FocusedFieldEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedFieldEnum.swift; sourceTree = "<group>"; };
+		FBAA58272E4BD6310014626E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FBAA586D2E510CE80014626E /* HistorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialView.swift; sourceTree = "<group>"; };
+		FBAA586F2E5124140014626E /* SubjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailView.swift; sourceTree = "<group>"; };
+		FBAA58712E5125840014626E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FBAA58732E5126250014626E /* ScoreBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBadgeView.swift; sourceTree = "<group>"; };
 		FBC93D8F2E06FF210048C6E0 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +90,13 @@
 				FB15BF4D2DFDDC440061CCD9 /* SwiftData */,
 				FB15BF642DFDE22F0061CCD9 /* Model */,
 				FB15BF4A2DFDDA7A0061CCD9 /* ViewModels */,
-				FB15BF3E2DFDC7890061CCD9 /* ContentView.swift */,
 				FB15BF3D2DFDC7890061CCD9 /* CalculadoraESPOLApp.swift */,
-				FB15BF3C2DFDC7890061CCD9 /* Assets.xcassets */,
+				FB15BF3E2DFDC7890061CCD9 /* ContentView.swift */,
 				FB15BF6C2DFE64050061CCD9 /* CalculadoraView.swift */,
+				FBAA586D2E510CE80014626E /* HistorialView.swift */,
+				FB15BF3C2DFDC7890061CCD9 /* Assets.xcassets */,
+				FBAA58272E4BD6310014626E /* Localizable.xcstrings */,
+				FBAA58712E5125840014626E /* Extensions.swift */,
 			);
 			path = CalculadoraESPOL;
 			sourceTree = "<group>";
@@ -91,6 +104,8 @@
 		FB15BF432DFDC79E0061CCD9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FBAA58732E5126250014626E /* ScoreBadgeView.swift */,
+				FBAA586F2E5124140014626E /* SubjectDetailView.swift */,
 				FBC93D8F2E06FF210048C6E0 /* NavigationBarModifier.swift */,
 				FB15BF442DFDC7A30061CCD9 /* FormTextField.swift */,
 				FB15BF482DFDD92B0061CCD9 /* SubjectsPicker.swift */,
@@ -173,11 +188,12 @@
 				};
 			};
 			buildConfigurationList = FB15BF292DFDC4F60061CCD9 /* Build configuration list for PBXProject "CalculadoraESPOL" */;
-			developmentRegion = en;
+			developmentRegion = "es-419";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = FB15BF252DFDC4F60061CCD9;
 			minimizedProjectReferenceProxies = 1;
@@ -198,6 +214,7 @@
 			files = (
 				FB15BF632DFDE1910061CCD9 /* subjects.json in Resources */,
 				FB15BF402DFDC7890061CCD9 /* Assets.xcassets in Resources */,
+				FBAA58282E4BD6310014626E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,18 +225,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAA58702E5124140014626E /* SubjectDetailView.swift in Sources */,
 				FB15BF6D2DFE64050061CCD9 /* CalculadoraView.swift in Sources */,
 				FB15BF472DFDD5610061CCD9 /* CalculadoraVM.swift in Sources */,
 				FB15BF552DFDDEF90061CCD9 /* CalculadoraEspolPreviewContainer.swift in Sources */,
 				FB15BF412DFDC7890061CCD9 /* CalculadoraESPOLApp.swift in Sources */,
+				FBAA58742E5126250014626E /* ScoreBadgeView.swift in Sources */,
 				FB15BF712DFE72F80061CCD9 /* BackgroundOverlay.swift in Sources */,
 				FB15BF6B2DFDE47D0061CCD9 /* SampleData.swift in Sources */,
 				FB15BF512DFDDC790061CCD9 /* SubjectData.swift in Sources */,
 				FB15BF452DFDC7A30061CCD9 /* FormTextField.swift in Sources */,
 				FBC93D902E06FF210048C6E0 /* NavigationBarModifier.swift in Sources */,
+				FBAA586E2E510CE80014626E /* HistorialView.swift in Sources */,
 				FB15BF6F2DFE6C100061CCD9 /* ResultMessage.swift in Sources */,
 				FB15BF752DFE871D0061CCD9 /* FocusedFieldEnum.swift in Sources */,
 				FB15BF492DFDD92B0061CCD9 /* SubjectsPicker.swift in Sources */,
+				FBAA58722E5125840014626E /* Extensions.swift in Sources */,
 				FB15BF692DFDE2550061CCD9 /* SubjectDTO.swift in Sources */,
 				FB15BF422DFDC7890061CCD9 /* ContentView.swift in Sources */,
 			);
@@ -288,7 +309,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -345,6 +368,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

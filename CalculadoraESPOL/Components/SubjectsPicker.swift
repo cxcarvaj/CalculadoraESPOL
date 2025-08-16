@@ -18,7 +18,7 @@ struct SubjectsPicker: View {
             VStack(spacing: 20) {
                 HStack {
                     Text("Materias guardadas:")
-                        .font(.subheadline)
+                        .bold()
                     Picker("Selecciona una materia", selection: $vm.selectedSubjectName) {
                         Text("Elige una materia").tag(String?.none)
                         ForEach(subjects, id: \.name) {subject in

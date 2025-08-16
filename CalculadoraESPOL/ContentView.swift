@@ -21,11 +21,7 @@ struct ContentView: View {
             
             Tab("Historial",
                 systemImage: "pencil.and.list.clipboard") {
-                ContentUnavailableView {
-                    Label("Esta página aún no está disponible", systemImage: "checkmark.circle.trianglebadge.exclamationmark")
-                } description: {
-                    Text("Trata de probar nuestra calculadora")
-                }
+                HistorialView()
             }
         }
         .backgroundOverlay(vm.totalScore == nil)
